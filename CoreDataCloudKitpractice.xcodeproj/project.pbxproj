@@ -17,6 +17,8 @@
 		75FAE75B24350E65004373D2 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75FAE75A24350E65004373D2 /* CloudKit.framework */; };
 		75FAE75D24354848004373D2 /* TeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FAE75C24354848004373D2 /* TeacherViewController.swift */; };
 		75FAE75F24354A53004373D2 /* CKDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FAE75E24354A53004373D2 /* CKDataController.swift */; };
+		75FAE7612436760A004373D2 /* TeacherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FAE7602436760A004373D2 /* TeacherListViewController.swift */; };
+		75FAE7632436771C004373D2 /* TeacherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FAE7622436771C004373D2 /* TeacherTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		75FAE75A24350E65004373D2 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		75FAE75C24354848004373D2 /* TeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherViewController.swift; sourceTree = "<group>"; };
 		75FAE75E24354A53004373D2 /* CKDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKDataController.swift; sourceTree = "<group>"; };
+		75FAE7602436760A004373D2 /* TeacherListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherListViewController.swift; sourceTree = "<group>"; };
+		75FAE7622436771C004373D2 /* TeacherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				75FAE75C24354848004373D2 /* TeacherViewController.swift */,
 				75FAE75E24354A53004373D2 /* CKDataController.swift */,
 				75FAE74724350E0C004373D2 /* Main.storyboard */,
+				75FAE7622436771C004373D2 /* TeacherTableViewCell.swift */,
+				75FAE7602436760A004373D2 /* TeacherListViewController.swift */,
 				75FAE74D24350E0D004373D2 /* Assets.xcassets */,
 				75FAE74F24350E0D004373D2 /* LaunchScreen.storyboard */,
 				75FAE75224350E0D004373D2 /* Info.plist */,
@@ -161,9 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75FAE7612436760A004373D2 /* TeacherListViewController.swift in Sources */,
 				75FAE74624350E0C004373D2 /* ViewController.swift in Sources */,
 				75FAE75F24354A53004373D2 /* CKDataController.swift in Sources */,
 				75FAE74224350E0C004373D2 /* AppDelegate.swift in Sources */,
+				75FAE7632436771C004373D2 /* TeacherTableViewCell.swift in Sources */,
 				75FAE75D24354848004373D2 /* TeacherViewController.swift in Sources */,
 				75FAE74C24350E0C004373D2 /* CoreDataCloudKitpractice.xcdatamodeld in Sources */,
 				75FAE74424350E0C004373D2 /* SceneDelegate.swift in Sources */,

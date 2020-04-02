@@ -23,7 +23,10 @@ class CKManager {
 
     }
 
-    public func fetchData(record: CKRecord, argumentArray: [String], completionHandler: @escaping (DataFetchAnswer) -> Void ) {
+    public func fetchData(record: CKRecord, completionHandler: @escaping (DataFetchAnswer) -> Void ) {
+
+        let recordId = record.recordID
+        let recordToMatch = CKRecord.Reference(recordID: recordId, action: .none)
         let predicate = NSPredicate(value: true)
         let query = CKQuery(recordType: record.recordType, predicate: predicate)
 

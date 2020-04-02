@@ -14,31 +14,28 @@ class TeacherViewController: UIViewController {
     @IBOutlet weak var teacherPhoto: UIImageView!
     @IBOutlet weak var teacherName: UILabel!
     @IBOutlet weak var teacherDRT: UILabel!
-    var professor = [CKRecord]()
+
+    var teacher: CKRecord?
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        let record = CKRecord(recordType: "Professor")
-        CKManager.shared.fetchData(record: record, argumentArray: ["João"]) { (answer) in
+        guard let teacher = teacher else { return }
+        CKManager.shared.fetchData(record: teacher) { (answer) in
             switch answer {
             case .fail(let err, _):
                 print(err)
             case .successful(let results):
-                for result in results {
-                    self.professor.append(result)
-                    result.
-                }
+                self.setup(result: results[0])
             }
         }
     }
 
-    func setup(professor: CKRecord) {
-        teacherName.text
-        teacherName.setNeedsDisplay()
-        teacherDRT.setNeedsDisplay()
-
+    func setup(result: CKRecord) {
+//        print(teacher.object(forKey: "nome") as? String)
+        teacherName.text = result.object(forKey: "nome") as? String
+        teacherDRT.text = result.object(forKey: "drt") as? String
     }
 }
